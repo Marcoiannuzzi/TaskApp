@@ -1,1 +1,6 @@
-<p>task-list works!</p>
+<h4>My Tasks</h4>
+
+<div class="d-flex gap-5 m-3">
+    <app-task [task]="tareas[0]" (deleteTaskEmiter)="deleteTask($event)"></app-task>
+    <app-task [task]="tareas[1]" (deleteTaskEmiter)="deleteTask($event)"></app-task>
+</div>
